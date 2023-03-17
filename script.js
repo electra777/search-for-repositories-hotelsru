@@ -6,7 +6,7 @@ const errorMessage = form.querySelector('.form-search__text-error');
 const result = document.querySelector('.result');
 
 async function getData() {
-	let url = `https://api.github.com/search/repositories?q=${formInput.value}&per_page`;
+	let url = `https://api.github.com/search/repositories?q=${formInput.value}&per_page=10`;
 	let response = await fetch(url);
 	let data = await response.json();
 
