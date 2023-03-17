@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+::-moz-placeholder {
+  color: #777;
+}
+
+::placeholder {
+  color: #777;
+}
+
+::-moz-selection {
+  background-color: #616666;
+  color: #fff;
+}
+
+::selection {
+  background-color: #616666;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  color: #101111;
+}
+body input, body textarea {
+  border: #dee2e6 1px solid;
+  outline: none;
+}
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+  border-color: red;
+}
+body input:required:valid, body textarea:required:valid {
+  border-color: green;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.form-search {
+  margin-bottom: 30px;
+  padding: 50px 15px;
+}
+.form-search__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.form-search__main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.form-search__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+.form-search__input:focus {
+  box-shadow: 2px 0px 5px 5px #dee2e6;
+  transition: 0.5s;
+}
+.form-search__input.invalid {
+  border-color: red;
+}
+.form-search__text-error {
+  opacity: 0;
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.form-search__btn {
+  background-color: #555555;
+  color: #ffffff;
+  padding: 13px 100px;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 50px;
+}
+
+.result {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.result__item {
+  border: 1px solid #555555;
+  padding: 20px;
+}
+.result__item-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.result__item-photo {
+  width: 70px;
+  border-radius: 50%;
+}
+.result__item-link {
+  color: #555555;
+}
+.result__item-icon {
+  width: 25px;
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */
